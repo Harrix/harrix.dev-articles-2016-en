@@ -2,6 +2,8 @@
 date: 2016-09-12
 categories: [it, programming]
 tags: [C++]
+author: Anton Sergienko
+author-email: anton.b.sergienko@gmail.com
 ---
 
 # Review of PVS-Studio
