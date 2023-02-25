@@ -33,6 +33,8 @@ Installation didn't cause any problems. There is a large button `Download and tr
 
 ![Button to download the program](img/download.png)
 
+_Figure 1: Button to download the program_
+
 Installation is totally standard; there are even no special options to choose from. In my articles, however, I always try to describe even the simplest steps. So, here you are the screenshots:
 
 ---
@@ -41,17 +43,31 @@ Installation is totally standard; there are even no special options to choose fr
 
 ![First setup window](img/install_01.png)
 
+_Figure 2: First setup window_
+
 ![License agreement](img/install_02.png)
+
+_Figure 3: License agreement_
 
 ![Select folder to install the program](img/install_03.png)
 
+_Figure 4: Select folder to install the program_
+
 ![Selecting components to install](img/install_04.png)
+
+_Figure 5: Selecting components to install_
 
 ![Select folder from main menu](img/install_05.png)
 
+_Figure 6: Select folder from main menu_
+
 ![Window before the program installation process](img/install_06.png)
 
+_Figure 7: Window before the program installation process_
+
 ![End of installation](img/install_07.png)
+
+_Figure 8: End of installation_
 
 ---
 
@@ -61,9 +77,13 @@ I'm saying right away that I didn't read any documentation at first. I just inst
 
 ![The items in the Start Menu](img/pvs-studio_01.png)
 
+_Figure 9: The items in the Start Menu_
+
 Intuition told me that the item I needed should have the same name as the program. Click. And here it failed me and showed this message:
 
 ![Message when opening the program](img/pvs-studio_02.png)
+
+_Figure 10: Message when opening the program_
 
 Honestly, I grew worried quite a bit. You see, I mostly work in Qt and keep Visual Studio rather as a tutorial program for my students.
 
@@ -71,29 +91,43 @@ OK. Perhaps I should try another menu-item, `Standalone`:
 
 ![Open program Standalone](img/pvs-studio_03.png)
 
+_Figure 11: Open program Standalone_
+
 That's better. Now, an important side note. What I **expected** to be the algorithm of working with the analyzer is this: I open it, load my project's source files, and it finds bugs for me. This assumption turned out to be completely wrong, but we'll talk about that later.
 
 So, at first I tried to load one of my files (I was worried by the fact that it allowed me to select only one file at a time):
 
 ![Open source file command](img/pvs-studio_04.png)
 
+_Figure 12: Open source file command_
+
 Here it is, but what's next? No more large or colorful buttons:
 
 ![Open the source code file](img/pvs-studio_05.png)
+
+_Figure 13: Open the source code file_
 
 There is only one item in the main menu that looks like what I need:
 
 ![Menu item with file analysis](img/pvs-studio_06.png)
 
+_Figure 14: Menu item with file analysis_
+
 ![Message when calling a command](img/pvs-studio_07.png)
+
+_Figure 15: Message when calling a command_
 
 And here's where I acted silly. Instead of reading the text, I started clicking around on the buttons. When I clicked on `Select` the program asked for some `*.suppress` files, which was obviously not what I needed. The word `Compiler` caught my eye. OK, so I should click on`Start Monitoring`:
 
 ![Start Monitoring](img/pvs-studio_08.png)
 
+_Figure 16: Start Monitoring_
+
 I thought that the program was scanning my computer for compilers, so it should take quite a while. And it really did (I waited for several hours), but I was happy to see that it started to find something at last:
 
 ![The process of the program](img/pvs-studio_09.png)
+
+_Figure 17: The process of the program_
 
 It was only some time later that I figured out the reason: I'd been working with my projects and compiling them while the monitoring process was running.
 
@@ -103,9 +137,15 @@ The relevant link turned out to be not quite noticeable:
 
 ![Documentation on the site](img/pvs-studio_10.png)
 
+_Figure 18: Documentation on the site_
+
 ![List of documentation articles](img/pvs-studio_11.png)
 
+_Figure 19: List of documentation articles_
+
 ![Documentation of Standalone](img/pvs-studio_12.png)
+
+_Figure 20: Documentation of Standalone_
 
 After reading the article, I finally figured out what to do.
 
@@ -121,33 +161,49 @@ Go to the analysis menu:
 
 ![Menu item with file analysis](img/pvs-studio_13.png)
 
+_Figure 21: Menu item with file analysis_
+
 Start monitoring compiler launches:
 
 ![Start Monitoring](img/pvs-studio_08.png)
+
+_Figure 22: Start Monitoring_
 
 The monitoring process can run in background:
 
 ![Search for compilers](img/pvs-studio_14.png)
 
+_Figure 23: Search for compilers_
+
 Compile the project:
 
 ![Running an application in Qt](img/qt.png)
+
+_Figure 24: Running an application in Qt_
 
 PVS-Studio has detected a launched instance of our compiler:
 
 ![Found compilers](img/pvs-studio_15.png)
 
+_Figure 25: Found compilers_
+
 Stop monitoring:
 
 ![Stop monitoring](img/pvs-studio_16.png)
+
+_Figure 26: Stop monitoring_
 
 And here PVS-Studio poured a pile of warnings. Damn. I'd hoped for better results:
 
 ![Found remarks and mistakes](img/pvs-studio_17.png)
 
+_Figure 27: Found remarks and mistakes_
+
 Double click on a warning takes you to the corresponding source file where the bug was found:
 
 ![Code with errors](img/pvs-studio_18.png)
+
+_Figure 28: Code with errors_
 
 When you finally grasp the idea behind the program, working with it becomes easy, but it's not quite intuitive for a beginner.
 
@@ -156,6 +212,8 @@ Now let's see what bugs we've got. Are they really bugs at all?
 **Warning.** When starting the compiler, rebuild the whole project. Just recently I was sad about 71 warnings, but after I fixed them and rebuilt the project, the tool issued over 1900 more warnings:
 
 ![Finding 1900 errors and remarks](img/pvs-studio_19.png)
+
+_Figure 29: Finding 1900 errors and remarks_
 
 Now I feel like cursing.
 
@@ -166,6 +224,8 @@ We have walked the path of my ascension to understanding how to use the program.
 I'm not much interested in the bugs found in Qt itself — they are the responsibility of those who developed the compiler:
 
 ![Errors found in Qt](img/pvs-studio_20.png)
+
+_Figure 30: Errors found in Qt_
 
 What about my own mistakes.
 
