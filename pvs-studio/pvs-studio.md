@@ -7,7 +7,7 @@ author-email: anton.b.sergienko@gmail.com
 license: CC BY 4.0
 license-url: https://github.com/Harrix/harrix.dev/blob/main/LICENSE.md
 url-src: https://github.com/Harrix/harrix.dev-blog-2016-en/blob/main/pvs-studio/pvs-studio.md
-url: https://harrix.dev/en/blog/2016/pvs-studio/
+permalink: https://harrix.dev/en/blog/2016/pvs-studio/
 lang: en
 ---
 
@@ -514,15 +514,15 @@ model->appendRow(item);
 
 ### Cons
 
-* The program is not intuitive; it's not easy to get started with. If I simply dropped by their site, downloaded a demo-version, and gave it a try, I'd most likely uninstalled it, none the wiser.
-* Old-fashioned design.
-* Syntax highlighting resembles that in Notepad++ (and that's a plus), but I am also accustomed to Notepad++ highlighting all the other instances of a selected keyword, as well as highlighting the corresponding closing parenthesis when selecting an opening one.
+- The program is not intuitive; it's not easy to get started with. If I simply dropped by their site, downloaded a demo-version, and gave it a try, I'd most likely uninstalled it, none the wiser.
+- Old-fashioned design.
+- Syntax highlighting resembles that in Notepad++ (and that's a plus), but I am also accustomed to Notepad++ highlighting all the other instances of a selected keyword, as well as highlighting the corresponding closing parenthesis when selecting an opening one.
 
 ### Pros
 
-* The program does know how to do its job, which is the most important thing. It can catch lots of hidden bugs or warnings that you are not likely to ever notice.
-* Once you have figured out how to use it, working with the analyzer becomes easy and comfortable.
-* The tool supports several compilers, including those used in Qt builds.
+- The program does know how to do its job, which is the most important thing. It can catch lots of hidden bugs or warnings that you are not likely to ever notice.
+- Once you have figured out how to use it, working with the analyzer becomes easy and comfortable.
+- The tool supports several compilers, including those used in Qt builds.
 
 **The final conclusion**: this program is certainly a **must-have**. A very handy tool to manage your code's quality.
 
