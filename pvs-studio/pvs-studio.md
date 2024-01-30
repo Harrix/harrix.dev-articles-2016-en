@@ -7,7 +7,7 @@ author-email: anton.b.sergienko@gmail.com
 license: CC BY 4.0
 license-url: https://github.com/Harrix/harrix.dev/blob/main/LICENSE.md
 permalink-source: https://github.com/Harrix/harrix.dev-articles-2016-en/blob/main/pvs-studio/pvs-studio.md
-permalink: https://harrix.dev/en/blog/2016/pvs-studio/
+permalink: https://harrix.dev/en/articles/2016/pvs-studio/
 lang: en
 ---
 
