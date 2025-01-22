@@ -17,6 +17,15 @@ lang: en
 
 PVS-Studio is a program that looks for bugs in the source code of C++ and C# projects that can't be seen by the compiler yet are almost sure to be programming mistakes.
 
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [How it all failed](#how-it-all-failed)
+- [How it all worked out](#how-it-all-worked-out)
+- [Analyzing errors](#analyzing-errors)
+- [Verdict](#verdict)
+  - [Cons](#cons)
+  - [Pros](#pros)
+
 ## Introduction
 
 I was contacted by the guys from the PVS-Studio team with a collaboration proposal. I have read a lot about their product on [Habrahabr](https://habr.com/ru/company/pvs-studio/), pages but never tried it. So, I suggested the following: they would give me a product license, and I would scan my programs and write a review of the tool, where I'd discuss how I was using the analyzer, how the codes were checked, and so on. They said yes.
