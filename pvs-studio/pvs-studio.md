@@ -46,9 +46,8 @@ _Figure 1: Button to download the program_
 
 Installation is totally standard; there are even no special options to choose from. In my articles, however, I always try to describe even the simplest steps. So, here you are the screenshots:
 
----
-
-**Installation of PVS-Studio** <!-- !details -->
+<details>
+<summary>Installation of PVS-Studio</summary>
 
 ![First setup window](img/install_01.png)
 
@@ -78,7 +77,7 @@ _Figure 7: Window before the program installation process_
 
 _Figure 8: End of installation_
 
----
+</details>
 
 ## How it all failed
 
