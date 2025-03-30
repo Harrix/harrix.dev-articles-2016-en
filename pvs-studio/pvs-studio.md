@@ -20,6 +20,8 @@ lang: en
 
 PVS-Studio is a program that looks for bugs in the source code of C++ and C# projects that can't be seen by the compiler yet are almost sure to be programming mistakes.
 
+## Table of contents
+
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [How it all failed](#how-it-all-failed)
